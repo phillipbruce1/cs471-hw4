@@ -279,6 +279,9 @@ view.blockCaret=false
 # Electric borders
 view.electricBorders=3
 
+# Notebook Lines
+view.notebookLines=false
+
 # Drag and drop of text
 view.dragAndDrop=true
 

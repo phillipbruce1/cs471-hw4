@@ -144,6 +144,12 @@ public abstract class TextArea extends JPanel
 
 		//}}}
 
+		//{{{ Enable line highlight
+		painter.setLineHighlightEnabled(true);
+		painter.setLineHighlightColor(new Color(255, 0, 0));
+		repaint();
+		//}}}
+
 		// This doesn't seem very correct, but it fixes a problem
 		// when setting the initial caret position for a buffer
 		// (eg, from the recent file list)

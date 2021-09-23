@@ -1015,6 +1015,7 @@ public class EditPane extends JPanel implements BufferSetListener
 		painter.setAntiAlias(new AntiAlias(jEdit.getProperty("view.antiAlias")));
 		painter.setFractionalFontMetricsEnabled(jEdit.getBooleanProperty(
 			"view.fracFontMetrics"));
+		painter.showNotebookLines(jEdit.getBooleanProperty("view.notebookLines"));
 
 		painter.setSelectionFgColor(jEdit.getColorProperty(
 			"view.selectionFgColor"));

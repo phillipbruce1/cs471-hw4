@@ -1,0 +1,63 @@
+Log file created on Wed Sep 22 19:25:06 MDT 2021
+IMPORTANT:
+Because updating this file after every log message would kill
+performance, it will be *incomplete* unless you invoke the
+Utilities->Troubleshooting->Update Activity Log on Disk command!
+7:25:06 PM [main] [message] Log: When reporting bugs, please include the following information:
+7:25:06 PM [main] [message] Log: java.version=11.0.11
+7:25:06 PM [main] [message] Log: java.vm.version=11.0.11+9-Ubuntu-0ubuntu2.20.04
+7:25:06 PM [main] [message] Log: java.vm.name=OpenJDK 64-Bit Server VM
+7:25:06 PM [main] [message] Log: java.runtime.version=11.0.11+9-Ubuntu-0ubuntu2.20.04
+7:25:06 PM [main] [message] Log: java.runtime.name=OpenJDK Runtime Environment
+7:25:06 PM [main] [message] Log: java.vendor=Ubuntu
+7:25:06 PM [main] [message] Log: java.compiler=null
+7:25:06 PM [main] [message] Log: os.name=Linux
+7:25:06 PM [main] [message] Log: os.version=5.4.72-microsoft-standard-WSL2
+7:25:06 PM [main] [message] Log: os.arch=amd64
+7:25:06 PM [main] [message] Log: user.home=/home/pb4000
+7:25:06 PM [main] [message] Log: java.home=/usr/lib/jvm/java-11-openjdk-amd64
+7:25:06 PM [main] [message] Log: java.class.path=/mnt/c/Users/pb400/Code/School/Fall 2021/CS 471/HW 4/jEdit/build/jedit.jar
+7:25:06 PM [main] [message] jEdit: starting with command line arguments: -settings=/mnt/c/Users/pb400/Code/School/Fall 2021/CS 471/HW 4/jEdit/build/settings
+7:25:06 PM [main] [notice] jEdit: An error occurred while connecting to the jEdit server instance.
+7:25:06 PM [main] [notice] jEdit: This probably means that jEdit crashed and/or exited abnormally
+7:25:06 PM [main] [notice] jEdit: the last time it was run.
+7:25:06 PM [main] [notice] jEdit: If you don't know what this means, don't worry.
+7:25:06 PM [main] [notice] jEdit: java.net.ConnectException: Connection refused (Connection refused)
+7:25:06 PM [main] [notice] jEdit:  at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+7:25:06 PM [main] [notice] jEdit:  at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+7:25:06 PM [main] [notice] jEdit:  at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+7:25:06 PM [main] [notice] jEdit:  at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+7:25:06 PM [main] [notice] jEdit:  at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+7:25:06 PM [main] [notice] jEdit:  at java.base/java.net.Socket.connect(Socket.java:609)
+7:25:06 PM [main] [notice] jEdit:  at java.base/java.net.Socket.connect(Socket.java:558)
+7:25:06 PM [main] [notice] jEdit:  at java.base/java.net.Socket.<init>(Socket.java:454)
+7:25:06 PM [main] [notice] jEdit:  at java.base/java.net.Socket.<init>(Socket.java:264)
+7:25:06 PM [main] [notice] jEdit:  at org.gjt.sp.jedit.jEdit.main(jEdit.java:308)
+7:25:06 PM [main] [debug] jEdit: before splash screen activation:141 ms
+7:25:06 PM [main] [error] GUIUtilities: error displaying splash screen !
+7:25:06 PM [main] [error] GUIUtilities: java.lang.reflect.InvocationTargetException
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventQueue.invokeAndWait(EventQueue.java:1367)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventQueue.invokeAndWait(EventQueue.java:1342)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1480)
+7:25:06 PM [main] [error] GUIUtilities:  at org.gjt.sp.jedit.GUIUtilities.showSplashScreen(GUIUtilities.java:1935)
+7:25:06 PM [main] [error] GUIUtilities:  at org.gjt.sp.jedit.jEdit.main(jEdit.java:366)
+7:25:06 PM [main] [error] GUIUtilities: Caused by: java.awt.HeadlessException: 
+7:25:06 PM [main] [error] GUIUtilities: No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.SplashScreen.getSplashScreen(SplashScreen.java:127)
+7:25:06 PM [main] [error] GUIUtilities:  at org.gjt.sp.jedit.gui.SplashScreen.<init>(SplashScreen.java:41)
+7:25:06 PM [main] [error] GUIUtilities:  at org.gjt.sp.jedit.GUIUtilities.lambda$showSplashScreen$7(GUIUtilities.java:1935)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:303)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+7:25:06 PM [main] [error] GUIUtilities:  at java.base/java.security.AccessController.doPrivileged(Native Method)
+7:25:06 PM [main] [error] GUIUtilities:  at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+7:25:06 PM [main] [error] GUIUtilities:  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+7:25:06 PM [main] [debug] jEdit: after splash screen activation:248 ms
+7:25:06 PM [main] [debug] MiscUtilities: Saving backup of file "/mnt/c/Users/pb400/Code/School/Fall 2021/CS 471/HW 4/jEdit/build/settings/activity.log" to "/mnt/c/Users/pb400/Code/School/Fall 2021/CS 471/HW 4/jEdit/build/settings/settings-backup/activity.log~1~"

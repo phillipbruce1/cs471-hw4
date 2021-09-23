@@ -33,6 +33,7 @@ import java.awt.*;
 import java.util.*;
 import org.gjt.sp.jedit.buffer.IndentFoldHandler;
 import org.gjt.sp.jedit.buffer.JEditBuffer;
+import org.gjt.sp.jedit.jEdit;
 import org.gjt.sp.jedit.syntax.Chunk;
 import org.gjt.sp.jedit.syntax.DefaultTokenHandler;
 import org.gjt.sp.jedit.syntax.SyntaxStyle;
@@ -571,6 +572,15 @@ public class TextAreaPainter extends JComponent implements TabExpander
 		repaint();
 	} //}}}
 
+	public final void showNotebookLines(boolean notebookLines) {
+		this.notebookLines = notebookLines;
+		repaint();
+	}
+
+	public final boolean isShowingNotebookLines() {
+		return notebookLines;
+	}
+
 	//{{{ getWrapGuideColor() method
 	/**
 	 * Returns the wrap guide color.
@@ -979,6 +989,7 @@ public class TextAreaPainter extends JComponent implements TabExpander
 	boolean structureHighlight;
 	boolean eolMarkers;
 	boolean wrapGuide;
+	boolean notebookLines;
 	AntiAlias antiAlias;
 	boolean fracFontMetrics;
 	RenderingHints renderingHints;
@@ -1109,6 +1120,11 @@ public class TextAreaPainter extends JComponent implements TabExpander
 			TextArea textArea = TextAreaPainter.this.textArea;
 			JEditBuffer buffer = textArea.getBuffer();
 
+			if (isShowingNotebookLines()) {
+				gfx.setColor(new Color(0, 0, 255));
+				gfx.drawLine(0, y + getLineHeight() - 1, getWidth(), y + getLineHeight() - 1);
+			}
+
 			//{{{ Paint line highlight and collapsed fold highlight
 			boolean collapsedFold =
 				physicalLine < buffer.getLineCount() - 1
@@ -1146,7 +1162,7 @@ public class TextAreaPainter extends JComponent implements TabExpander
 			if(paintLineHighlight || collapsedFold)
 			{
 				gfx.setColor(bgColor);
-				gfx.fillRect(0,y,getWidth(),getLineHeight());
+				gfx.fillRect(0,y,getWidth(),getLineHeight() - 1);
 			} //}}}
 
 			//{{{ Paint token backgrounds
