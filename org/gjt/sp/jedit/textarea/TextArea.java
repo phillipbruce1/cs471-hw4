@@ -103,7 +103,6 @@ public abstract class TextArea extends JPanel
 		//{{{ Initialize the GUI
 		setLayout(new ScrollLayout());
 		add(ScrollLayout.CENTER,painter);
-		add(ScrollLayout.LEFT,gutter);
 
 		// some plugins add stuff in a "right-hand" gutter
 		RequestFocusLayerUI reqFocus = new RequestFocusLayerUI();
@@ -142,12 +141,6 @@ public abstract class TextArea extends JPanel
 		addFocusListener(new FocusHandler());
 		addMouseWheelListener(new MouseWheelHandler());
 
-		//}}}
-
-		//{{{ Enable line highlight
-		painter.setLineHighlightEnabled(true);
-		painter.setLineHighlightColor(new Color(255, 0, 0));
-		repaint();
 		//}}}
 
 		// This doesn't seem very correct, but it fixes a problem
